@@ -10,8 +10,8 @@ require('./controller.js').OLSKControllerRoutes().forEach(function (kDefaultRout
 			});
 		});
 
-		it('classes OLSKCommonIdentity', function () {
-			browser.assert.hasClass(OLSKRootLink, 'OLSKCommonIdentity');
+		it('classes OLSKCommonRootLink', function () {
+			browser.assert.hasClass(OLSKRootLink, 'OLSKCommonRootLink');
 		});
 
 		it('sets href', function () {
