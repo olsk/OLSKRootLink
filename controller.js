@@ -8,7 +8,7 @@ exports.OLSKControllerRoutes = function() {
 			});
 		},
 		OLSKRouteSignature: 'OLSKRootLinkEJSStubRoute',
-		OLSKRouteLanguageCodes: ['en', 'fr', 'es'],
+		OLSKRouteLanguageCodes: ['en', 'fr', 'es', 'pt'],
 		OLSKRouteIsHidden: process.env.NODE_ENV === 'production',
 	}, {
 		OLSKRoutePath: '/stub/OLSKRootLinkSvelte',
@@ -17,7 +17,7 @@ exports.OLSKControllerRoutes = function() {
 			return res.render(require('path').join(__dirname, 'stub-view'));
 		},
 		OLSKRouteSignature: 'OLSKRootLinkSvelteStubRoute',
-		OLSKRouteLanguageCodes: ['en', 'fr', 'es'],
+		OLSKRouteLanguageCodes: ['en', 'fr', 'es', 'pt'],
 		OLSKRouteIsHidden: process.env.NODE_ENV === 'production',
 	}];
 };
