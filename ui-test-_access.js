@@ -3,7 +3,7 @@ Object.entries({
 	
 	OLSKRootLinkImage: '.OLSKRootLinkImage',
 }).map(function (e) {
-	return global[e.shift()]  = e.pop();
+	return global[e.shift()] = e.pop();
 });
 
 require('./controller.js').OLSKControllerRoutes().forEach(function (kDefaultRoute) {
