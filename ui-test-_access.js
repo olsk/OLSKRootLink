@@ -18,11 +18,11 @@ require('./controller.js').OLSKControllerRoutes().forEach(function (kDefaultRout
 		});
 		
 		it('shows OLSKRootLink', function() {
-			browser.assert.elements(OLSKRootLink, 1);
+			return browser.assert.elements(OLSKRootLink, 1);
 		});
 		
 		it('shows OLSKRootLinkImage', function() {
-			browser.assert.elements(OLSKRootLinkImage, 1);
+			return browser.assert.elements(OLSKRootLinkImage, 1);
 		})
 		
 	});

@@ -11,25 +11,25 @@ require('./controller.js').OLSKControllerRoutes().forEach(function (kDefaultRout
 		});
 
 		it('classes OLSKCommonRootLink', function () {
-			browser.assert.hasClass(OLSKRootLink, 'OLSKCommonRootLink');
+			return browser.assert.hasClass(OLSKRootLink, 'OLSKCommonRootLink');
 		});
 
 		it('sets href', function () {
-			browser.assert.attribute(OLSKRootLink, 'href', 'alfa');
+			return browser.assert.attribute(OLSKRootLink, 'href', 'alfa');
 		});
 
 		it('sets title', function () {
-			browser.assert.attribute(OLSKRootLink, 'title', 'charlie');
+			return browser.assert.attribute(OLSKRootLink, 'title', 'charlie');
 		});
 
 		describe('OLSKRootLinkImage', function () {
 			
 			it('sets role', function () {
-				browser.assert.attribute(OLSKRootLinkImage, 'role', 'presentation');
+				return browser.assert.attribute(OLSKRootLinkImage, 'role', 'presentation');
 			});
 		
 			it('sets src', function () {
-				browser.assert.attribute(OLSKRootLinkImage, 'src', 'bravo');
+				return browser.assert.attribute(OLSKRootLinkImage, 'src', 'bravo');
 			});
 		
 		});
